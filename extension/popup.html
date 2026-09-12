@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        width: 320px;
+        font-family: Inter, system-ui, sans-serif;
+        background: #0f1729;
+        color: #f7f5f0;
+        margin: 0;
+        padding: 16px;
+      }
+      h1 {
+        font-size: 14px;
+        margin: 0 0 12px;
+        color: #64748b;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .score {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 36px;
+        margin: 0;
+      }
+      .confidence {
+        font-size: 11px;
+        color: #64748b;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+      .summary {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 14px;
+      }
+      .signal {
+        border: 1px solid #1b2740;
+        border-radius: 2px;
+        padding: 8px 10px;
+        margin-bottom: 6px;
+        font-size: 12px;
+      }
+      .signal .tag {
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 6px;
+      }
+      .clear { color: #2d9c8a; }
+      .caution { color: #e8a23d; }
+      .flagged { color: #c4523a; }
+      .empty {
+        font-size: 13px;
+        color: #64748b;
+      }
+      a.options-link {
+        display: inline-block;
+        margin-top: 12px;
+        font-size: 11px;
+        color: #64748b;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Veritas — last check</h1>
+    <div id="content">
+      <p class="empty">Right-click an image on any page and choose "Check with Veritas" to get started.</p>
+    </div>
+    <a class="options-link" href="options.html" target="_blank">Set API URL →</a>
+    <script src="popup.js"></script>
+  </body>
+</html>
